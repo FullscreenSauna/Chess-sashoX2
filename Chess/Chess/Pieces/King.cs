@@ -8,7 +8,7 @@ namespace Chess
     {
         bool hasMooved;
 
-        public King(int row, char column, string color) : base(row, column, color)
+        public King(int row, int column, string color) : base(row, column, color)
         {
             hasMooved = false;
         }

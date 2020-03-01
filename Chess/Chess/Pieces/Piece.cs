@@ -7,11 +7,11 @@ namespace Chess
     public abstract class Piece
     {
         private int row;
-        private char column;
+        private int column;
         private string color;
         private bool isAlive;
 
-        public Piece(int row, char column, string color)
+        public Piece(int row, int column, string color)
         {
             Row = row;
             Column = column;
@@ -31,12 +31,12 @@ namespace Chess
                 row = value;
             }
         }
-        public char Column
+        public int Column
         {
             get { return column; }
             set
             {
-                if (value < 'a' && value > 'h')
+                if (value < 1 && value > 8)
                 {
                     throw new ArgumentOutOfRangeException("Column should be between A and H!");
                 }
