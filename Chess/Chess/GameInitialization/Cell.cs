@@ -14,7 +14,6 @@ namespace Chess.GameInitialization
 
         public int RowNum{ get; private set; }
         public int ColumnNum{ get; private set; }
-
         public bool IsOccupied { get; private set; }
     }
 }
