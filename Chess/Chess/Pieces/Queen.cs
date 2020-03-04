@@ -10,7 +10,7 @@ namespace Chess.Pieces
 
         public override string Moove()
         {
-            return null;
+            throw new NotImplementedException();
         }
     }
 }

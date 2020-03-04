@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Chess
 {
-    class King : Piece
+    public class King : Piece
     {
         private bool hasMooved;
 
