@@ -11,7 +11,7 @@ namespace Chess
         private string color;
         private bool isAlive;
 
-        public Piece(int row, int column, string color)
+        protected Piece(int row, int column, string color)
         {
             Row = row;
             Column = column;

@@ -6,23 +6,18 @@ namespace Chess
 {
     class King : Piece
     {
-        bool hasMooved;
+        private bool hasMooved;
 
         public King(int row, int column, string color) : base(row, column, color)
         {
-            hasMooved = false;
+            HasMooved = false;
         }
+
+        public bool HasMooved { get; private set; }
 
         public override string Moove()
         {
-        return null;
+            throw new NotImplementedException();
         }
-        //public override string Moove(int row, char column)
-        //{
-        //    if (this.Row+1 == row ||  )
-        //    {
-
-        //    }
-        //}
     }
 }
