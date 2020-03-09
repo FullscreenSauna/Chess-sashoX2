@@ -10,7 +10,7 @@ namespace Chess.Pieces
         {
         }
 
-        public override string Moove()
+        public override bool CheckIfNextMooveIsLegal(int row, int column)
         {
             throw new NotImplementedException();
         }

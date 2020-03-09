@@ -31,8 +31,8 @@ namespace Chess.GameInitialization
 
         private void PlaceQueens()
         {
-            Queen whiteQueen = new Queen(7, 3, "wjite");
-            Queen blackQueen = new Queen(0, 3, "wjite");
+            Queen whiteQueen = new Queen(7, 3, "white");
+            Queen blackQueen = new Queen(0, 3, "black");
         }
 
         private void PlaceBishops()
@@ -77,13 +77,13 @@ namespace Chess.GameInitialization
         private void PlacePawns()
         {
             // Place white Pawns
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 8; i++)
             {
                 Pawn whitePawn = new Pawn(6, i, "white");
             }
 
             // Place black Pawns
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 8; i++)
             {
                 Pawn blackPawn = new Pawn(1, i, "black");
             }

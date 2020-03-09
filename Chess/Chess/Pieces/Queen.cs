@@ -8,7 +8,7 @@ namespace Chess.Pieces
     {
         public Queen(int row, int column, string color) : base(row, column, color) {}
 
-        public override string Moove()
+        public override bool CheckIfNextMooveIsLegal(int row, int column)
         {
             throw new NotImplementedException();
         }

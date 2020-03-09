@@ -7,15 +7,15 @@ namespace Chess.GameInitialization
 	public class GameBoardCreator
 	{
 		// ChessBoard is a matrix
-		public Cell[,] Board { get; private set; }
+		public Position[,] Board { get; private set; }
 		
 		public void CreateBoard()
 		{
-			for (int i = 0; i < 7; i++)
+			for (int i = 0; i < 8; i++)
 			{
-				for (int j = 0; j < 7; j++)
+				for (int j = 0; j < 8; j++)
 				{
-					Board[i, j] = new Cell(i, j);
+					Board[i, j] = new Position(i, j);
 				}
 			}
 		}

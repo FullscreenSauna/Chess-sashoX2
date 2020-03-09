@@ -15,9 +15,22 @@ namespace Chess
 
         public bool HasMooved { get; private set; }
 
-        public override string Moove()
+        public override bool CheckIfNextMooveIsLegal(int row, int column)
         {
-            throw new NotImplementedException();
+            int rowDifference = Row - row;
+            int columnDifference = Column - column;
+            //TODO Check if the possition is occupied
+            //TODO Check if the possition is occupied by a piece of the same color
+            if (rowDifference == 1 || rowDifference == 0 || rowDifference == -1 || 
+                columnDifference == 1 || columnDifference == 0 || columnDifference == -1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
     }
 }

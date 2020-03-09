@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -57,7 +58,22 @@ namespace Chess
         }
 
 
-        public abstract string Moove();
+        public void Move(int row, int column)
+        {
+            if (CheckIfNextMooveIsLegal(row , column) == false)
+            {
+                throw new ArgumentOutOfRangeException($"{typeof(Piece)} cannot be moved");
+            }
+            else
+            {
+                Row = row;
+                Column = column;
+                // TODO: Set    Position(Row, Column).IsOccupied = true
+               
+            }
+        }
+
+        public abstract bool CheckIfNextMooveIsLegal(int row, int column);
 
         public void TakeAttack()
         {

@@ -4,16 +4,18 @@ using System.Text;
 
 namespace Chess.GameInitialization
 {
-    public class Cell
+    public class Position
     {
-        public Cell(int rowNum, int columnNum)
+        bool isOccupied;
+        public Position(int rowNum, int columnNum)
         {
             RowNum = rowNum;
             ColumnNum = columnNum;
+            isOccupied = false;
         }
 
         public int RowNum{ get; private set; }
         public int ColumnNum{ get; private set; }
-        public bool IsOccupied { get; private set; }
+        public bool IsOccupied { get=> isOccupied; set => value= isOccupied; }
     }
 }
